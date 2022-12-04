@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,500&family=Lato:wght@100&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
 }
 
 header {
@@ -106,10 +112,10 @@ a {
     width: 60%;
     text-align: center;
     color: white;
-    background-image: url("내이미지.jpg");
+    background-image: url("./img/내이미지.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("나나.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("./img/내이미지.jpg");
 }
 
 .intro1 {
@@ -118,6 +124,7 @@ a {
     align-items: center;
     width: 40vw;
     height: 100%;
+    font-size: 30px;
 }
 
 .intro2 {
@@ -126,4 +133,168 @@ a {
     align-items: center;
     width: 60vw;
     height: 100%;
+}
+
+.like-travel {
+    position: relative;
+    animation: fadeInUp 5s;
+    font-size: 70px;
+}
+
+.myname {
+    font-size: 100px;
+}
+
+.imp-content {
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: #f1c40f;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.project {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.share {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.more-about-me {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.skills {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.project-container1 {
+    position: absolute;
+    left: 35%;
+    width: 700px;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: black;
+    transform: translateX(-70%);
+}
+
+.project-container2 {
+    position: absolute;
+    left: 65%;
+    width: 700px;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: black;
+    transform: translateX(-30%);
+}
+
+.project-img-container {
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.project-img {
+    border-radius: 20px;
+    width: 450px;
+    height: 300px;
+    margin: 50px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+    padding: 30px;
+}
+
+.githup-container {
+    margin-left: 50px;
+    background-color: black;
+    border-radius: 20px;
+    width: 1000px;
+}
+
+.velog-container {
+    margin: 50px;
+    background-color: black;
+    border-radius: 20px;
+    width: 1000px;
+    float: right;
+}
+
+.githup-icon-container {
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.velog-icon-container {
+    padding: 50px;
+    width: 350px;
+    height: 300px;
+    float: right;
+}
+
+.githup-icon {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.velog-icon {
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+}
+
+.sub-title {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.front-end {
+    background-color: white;
+    width : 300px;
+    height: 80vh;
+    border-radius: 20px;
+    margin: 0 50px 0 50px;
+}
+
+.skill-icon1 {
+    width: 250px;
+    height: 100px;
+}
+
+.skill-icon2 {
+    width: 150px;
+    height: 150px;
+}
+
+.skill-container {
+    display:flex;
 }
