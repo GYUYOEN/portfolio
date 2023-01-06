@@ -13,6 +13,8 @@ body {
 header {
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .navbar {
@@ -23,6 +25,20 @@ header {
     width: 100vw;
     padding: 8px 12px;
 }
+
+.navbar-down {
+    position:fixed;
+    animation: down 0.3s ease;
+}
+
+@keyframes down {
+    0%{
+        transform: translateY(-50px)
+    }
+    100%{
+        transform: translateY(0px)
+    }  
+ }
 
 .brand {
     margin-right: auto;
@@ -125,6 +141,7 @@ a {
     width: 40vw;
     height: 100%;
     font-size: 30px;
+    animation: fadeInUp 10s;
 }
 
 .intro2 {
@@ -136,9 +153,8 @@ a {
 }
 
 .like-travel {
-    position: relative;
-    animation: fadeInUp 5s;
     font-size: 70px;
+    animation: fadeInUp 3s;
 }
 
 .myname {
@@ -156,11 +172,9 @@ a {
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translate3d(0, 100%, 0);
     }
     to {
         opacity: 1;
-        transform: translateZ(0);
     }
 }
 
@@ -171,9 +185,10 @@ hr {
 
 .project {
     position: relative;
-    height: 105vh;
+    height: 110vh;
     width: 100vw;
     background-color: white;
+    z-index: 1;
 }
 
 .section input[name="slide"]
@@ -216,7 +231,7 @@ hr {
  }
 
  .explain2 {
-    padding: 10px 0 10px 10px;
+    padding: 60px 0 10px 10px;
     font-size: 18px;
     width: 40%;
     float: right;
@@ -298,7 +313,7 @@ hr {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: white;
 }
 
 .title {
@@ -309,38 +324,53 @@ hr {
     padding: 10px;
 }
 
-.githup-container {
+.share-container {
     display: flex;
-    margin: 50px;
-    background-color: black;
-    border-radius: 20px;
-    width: 1000px;
+    justify-content: center;
 }
 
-.text-container {
-    margin: auto;
-    color: white;
+.githup-container {
+    margin: 50px;
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    height: auto;
+}
+
+li {
+    list-style-type : none;
+}
+
+.text-container1 {
+    color: black;
+}
+
+.text-container2 {
+    color: black;
 }
 
 .velog-container {
     margin: 50px;
-    background-color: black;
+    background-color: white;
     border-radius: 20px;
-    width: 1000px;
-    float: right;
+    width: 400px;
+    text-align: center;
+    height: auto;
 }
 
 .githup-icon-container {
     padding: 50px;
+    margin: 50px;
     width: 300px;
     height: 300px;
 }
 
 .velog-icon-container {
-    padding: 50px;
-    width: 350px;
+    padding-top: 50px;
+    margin: 50px;
+    width: 300px;
     height: 300px;
-    float: right;
 }
 
 .githup-icon {

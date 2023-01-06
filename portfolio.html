@@ -15,16 +15,13 @@
                 </div>
                 <ul class="nav-link">
                     <li>
-                        <a href="">project</a>
+                        <a href="#project" id="scroll-move">project</a>
                     </li>
                     <li>
-                        <a href="">share</a>
+                        <a href="#skills" id="scroll-move">skills</a>
                     </li>
                     <li>
-                        <a href="">skills</a>
-                    </li>
-                    <li>
-                        <a href="">more about me</a>
+                        <a href="#share" id="scroll-move">share</a>
                     </li>
                 </ul>
 
@@ -33,186 +30,184 @@
                 </a>
             </nav>
         </header>
-        <section class="main">
-            <div class="main1">
-                <div class="intro1">
-                    <p>
-                        ' 아직 아는 것이 많이 없는 개발자이지만<br>
-                        새로운 것을 배우는 것을 좋아하고<br>
-                        경험하는 것을 좋아하는<br>
-                        <span class="imp-content">의욕충만 병아리 개발자</span> 입니다. '
-                    </p>
+        <div class="all">
+            <section class="main">
+                <div class="main1">
+                    <div class="intro1">
+                        <p>
+                            ' 아직 아는 것이 많이 없는 개발자이지만<br>
+                            새로운 것을 배우는 것을 좋아하고<br>
+                            경험하는 것을 좋아하는<br>
+                            <span class="imp-content">의욕충만 병아리 개발자</span> 입니다. '
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="main2">
-                <div class="intro2">
-                    <p style="font-size: 50px;">
-                        <span class="like-travel">
-                            개발 여행을 좋아하는 
-                        </span>
-                        <br>
-                        <span class="myname">"개발자 김규연"</span>
-                    </p>
+                <div class="main2">
+                    <div class="intro2">
+                        <p style="font-size: 50px;">
+                            <span class="like-travel">
+                                개발 여행을 좋아하는 
+                            </span>
+                            <br>
+                            <span class="myname">"개발자 김규연"</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="project">
-            <div class="title">
-                <h1>project</h1>
-            </div>
-            <hr />
-            <div class="section">
-                <input type="radio" name="slide" id="slide01" checked>
-                <input type="radio" name="slide" id="slide02">
+            </section>
+            <section class="project" id="project">
+                <div class="title">
+                    <h1>project</h1>
+                </div>
+                <hr />
+                <div class="section">
+                    <input type="radio" name="slide" id="slide01" checked>
+                    <input type="radio" name="slide" id="slide02">
 
-                <div class="slidewrap">
-                    <ul class="slidelist">
-                        <li>
-                            <a>
-                                <img src="./img/별그램.gif">
-                                <div class="explain1">
-                                    [프로젝트 설명]<br>
-                                    hello, my life는 인스타그램 클론 코딩을 한 것으로써 기능은 인스타그램과 비슷합니다.
-                                    하지만 인스타그램을 써보고 대중적으로 많이 알려진 인스타그램에서 있었으면
-                                    편리할 것 같은 기능들을 새롭게 구현해보고 싶었습니다.<br>
-                                    <br>
-                                    팀프로젝트 때 사용했던 spring security를 이용해서 로그인과 회원가입을 진행하였습니다.
-                                    팀프로젝트 당시 놓쳤던 부분이나 시간이 없어 미처 사용하지 못했던 부분들을 보안하기 위해 다시한번 사용해봤습니다.<br>
-                                    <br>
-                                    또한 개발자 블로그를 알게 되면서 블로그를 써보게 된 계기가 되었고
-                                    블로그를 작성하면서 만들어본 첫 프로젝트입니다.
-                                    블로그를 통해 기록의 중요성을 알게되었고 블로그가 얼만가 개발하는데 도움이 되는지 배웠습니다.
+                    <div class="slidewrap">
+                        <ul class="slidelist">
+                            <li>
+                                <a href="https://github.com/hong-yura/WorkForUs-Project">
+                                    <img src="./img/workforus.gif">
+                                    <div class="explain1">
+                                        <h1>[프로젝트 설명]</h1><br>
+                                        workforus는 회사나 학업에서 자주 사용하는 그룹웨어 시스템입니다.
+                                        일정관리, 메일, 메신저, 근태관리, 게시판, 주소록의 기능이 있습니다.
+                                        제가 담당한 기능은 로그인, 회원가입, 내정보관리, 메신저 입니다. <br>
+                                        <br>
+                                        로그인과 회원가입은 spring security룰 사용하였습니다. 
+                                        로그인과 회원가입의 UI & UX는 기존에 있던 디자인을 사용하였지만
+                                        메신저는 직접 디자인을 구현하였습니다.
+                                        메신저 구현은 WebSocket와 stomp를 이용함으로써 웹통신이 어떻게 이루어지는지 아는 중요한 계기가 되었습니다.<br>
+                                        <br>
+                                        학원에서 진행한 팀프로젝트이자 저의 첫 프로젝트입니다.
+                                        팀원은 학원 초반에 들어간 스터디모임 맴버들과 진행하였습니다.
+                                        팀프로젝트를 하면서 혐업이 무엇이고 협업에서 Github 관리는 어떻게 이루어지는지고 어떻게 진행해야지 편리한지 배웠습니다.
+                                        첫 프로젝트인 만큼 욕심도 컸지만 시간이 정해져 있어 욕심을 못이룬 아쉬움이 컸습니다.
+                                    </div>    
+                                    <div class="explain2">
+                                        <b>프로젝트 방식</b> : Spring MVC<br>
+                                        <b>사용 프로그램</b> : Eclipse, Oracle, Maven, Github<br>
+                                        <b>사용 언어</b> : Java, Html, Css, JavaScript, MyBatis, bootstrap, WebSocket, Stomp<br>
+                                        <b>Github 주소</b> : https://github.com/hong-yura/WorkForUs-Project<br>
+                                        <b>배포 주소</b> : https://workforus.site
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GYUYOEN/instagram">
+                                    <img src="./img/별그램.gif">
+                                    <div class="explain1">
+                                        <h1>[프로젝트 설명]</h1><br>
+                                        hello, my life는 인스타그램 클론 코딩을 한 것으로써 기능은 인스타그램과 비슷합니다.
+                                        하지만 인스타그램을 써보고 대중적으로 많이 알려진 인스타그램에서 있었으면
+                                        편리할 것 같은 기능들을 새롭게 구현해보고 싶었습니다.<br>
+                                        <br>
+                                        팀프로젝트 때 사용했던 spring security를 이용해서 로그인과 회원가입을 진행하였습니다.
+                                        팀프로젝트 당시 놓쳤던 부분이나 시간이 없어 미처 사용하지 못했던 부분들을 보안하기 위해 다시한번 사용해봤습니다.<br>
+                                        <br>
+                                        또한 개발자 블로그를 알게 되면서 블로그를 써보게 된 계기가 되었고
+                                        블로그를 작성하면서 만들어본 첫 프로젝트입니다.
+                                        블로그를 통해 기록의 중요성을 알게되었고 블로그가 얼만가 개발하는데 도움이 되는지 배웠습니다.
+                                    </div>
+                                    <div class="explain2">
+                                        <b>프로젝트 방식</b> : Spring Boot<br> 
+                                        <b>사용 프로그램</b> : Intellij, VSCode, MariaDB, Gradle, Github<br>
+                                        <b>사용 언어</b> : Java, Html, Css, JavaScript, Jpa, bootstrap<br>
+                                        <b>Github 주소</b> : https://github.com/GYUYOEN/instagram
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="slide-control">
+                                <div class="control01">
+                                    <label for="slide02" class="left"></label>
+                                    <label for="slide02" class="right"></label>
                                 </div>
-                                <div class="explain2">
-                                    프로젝트 기간 : <br>
-                                    프로젝트 방식 : Spring Boot<br> 
-                                    사용 프로그램 : Intellij, VSCode, MariaDB, Gradle, Github<br>
-                                    사용 언어 : Java, Html, Css, JavaScript, Jpa, bootstrap<br>
-                                    Github 주소 : https://github.com/GYUYOEN/instagram
+                                <div class="control02">
+                                    <label for="slide01" class="left"></label>
+                                    <label for="slide01" class="right"></label>
                                 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="./img/workforus.png">
-                                <div class="explain1">
-                                    [프로젝트 설명]<br>
-                                    workforus는 회사나 학업에서 자주 사용하는 그룹웨어 시스템입니다.
-                                    일정관리, 메일, 메신저, 근태관리, 게시판, 주소록의 기능이 있습니다.
-                                    제가 담당한 기능은 로그인, 회원가입, 내정보관리, 메신저 입니다. <br>
-                                    <br>
-                                    로그인과 회원가입은 spring security룰 사용하였습니다. 
-                                    로그인과 회원가입의 UI & UX는 기존에 있던 디자인을 사용하였지만
-                                    메신저는 직접 디자인을 구현하였습니다.
-                                    메신저 구현은 WebSocket와 stomp를 이용함으로써 웹통신이 어떻게 이루어지는지 아는 중요한 계기가 되었습니다.<br>
-                                    <br>
-                                    학원에서 진행한 팀프로젝트이자 저의 첫 프로젝트입니다.
-                                    팀원은 학원 초반에 들어간 스터디모임 맴버들과 진행하였습니다.
-                                    팀프로젝트를 하면서 혐업이 무엇이고 협업에서 Github 관리는 어떻게 이루어지는지고 어떻게 진행해야지 편리한지 배웠습니다.
-                                    첫 프로젝트인 만큼 욕심도 컸지만 시간이 정해져 있어 욕심을 못이룬 아쉬움이 컸습니다.
-                                </div>    
-                                <div class="explain2">
-                                    프로젝트 기간 : <br>
-                                    프로젝트 방식 : Spring MVC<br>
-                                    사용 프로그램 : Eclipse, Oracle, Maven, Github<br>
-                                    사용 언어 : Java, Html, Css, JavaScript, MyBatis, bootstrap, WebSocket, Stomp<br>
-                                    Github 주소 : https://github.com/hong-yura/WorkForUs-Project
-                                </div>
-                            </a>
-                        </li>
-                        <div class="slide-control">
-                            <div class="control01">
-                                <label for="slide02" class="left"></label>
-                                <label for="slide02" class="right"></label>
                             </div>
-                            <div class="control02">
-                                <label for="slide01" class="left"></label>
-                                <label for="slide01" class="right"></label>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div style="color: black;" class="title">
+                    <h1>skills</h1>
+                </div>
+                <hr />
+                <div class="skill-container">
+                    <div>
+                        <div class="front-end">
+                            <div class="sub-title">
+                                <h2>front-end</h2>
                             </div>
+                            <img class="skill-icon1" src="./img/htmlcssjs.png">
+                            <img class="skill-icon1" src="./img/jquery.png">
                         </div>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="skills">
-            <div style="color: white;" class="title">
-                <h1>skills</h1>
-            </div>
-            <hr />
-            <div class="skill-container">
-                <div>
-                    <div class="front-end">
-                        <div class="sub-title">
-                            <h2>front-end</h2>
+                        <div class="front-end">
+                            <div class="sub-title">
+                                <h2>back-end</h2>
+                            </div>
+                            <img class="skill-icon2" src="./img/java.png">
+                            <img class="skill-icon1" src="./img/spring.png">
                         </div>
-                        <img class="skill-icon1" src="./img/htmlcssjs.png">
-                        <img class="skill-icon1" src="./img/jquery.png">
                     </div>
-                    <div class="front-end">
-                        <div class="sub-title">
-                            <h2>back-end</h2>
+                    <div>
+                        <div class="front-end">
+                            <div class="sub-title">
+                                <h2>IDE</h2>
+                            </div>
+                            <img class="skill-icon1" src="./img/vscode.png">
+                            <img class="skill-icon2" src="./img/intellij.png">
+                            <img class="skill-icon1" src="./img/eclipse.png">
+                            <img class="skill-icon1" src="./img/dbeaver.png">
                         </div>
-                        <img class="skill-icon2" src="./img/java.png">
-                        <img class="skill-icon1" src="./img/spring.png">
-                    </div>
-                </div>
-                <div>
-                    <div class="front-end">
-                        <div class="sub-title">
-                            <h2>IDE</h2>
+                        <div class="front-end">
+                            <div class="sub-title">
+                                <h2>DB Server</h2>
+                            </div>
+                            <img class="skill-icon1" src="./img/oracle.png">
+                            <img class="skill-icon1" src="./img/mariaDB.png">
                         </div>
-                        <img class="skill-icon1" src="./img/vscode.png">
-                        <img class="skill-icon2" src="./img/intellij.png">
-                        <img class="skill-icon1" src="./img/eclipse.png">
-                        <img class="skill-icon1" src="./img/dbeaver.png">
-                    </div>
-                    <div class="front-end">
-                        <div class="sub-title">
-                            <h2>DB Server</h2>
-                        </div>
-                        <img class="skill-icon1" src="./img/oracle.png">
-                        <img class="skill-icon1" src="./img/mariaDB.png">
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="share">
-            <div class="title">
-                <h1>share for you</h1>
-            </div>
-            <hr />
-            <div class="githup-container">
-                <div class="githup-icon-container">
-                    <img class="githup-icon" src="./img/github.png">
+            </section>
+            <section class="share" id="share">
+                <div class="title">
+                    <h1>share for you</h1>
                 </div>
-                <div class="text-container">
-                    <h2>github</h2><br>
-                    <ul>
-                        <li>프로젝트를 저장하는 장소</li>
-                        <li>배웠던 것들을 저장하는 장소</li>
-                    </ul><br>
-                    Github 주소 : 
+                <hr />
+                <div class="share-container">
+                    <div class="githup-container">
+                        <div class="githup-icon-container">
+                            <img class="githup-icon" src="./img/github.png">
+                        </div>
+                        <div class="text-container1">
+                            <h2>github</h2><br>
+                            <ul>
+                                <li>프로젝트를 저장하는 장소</li>
+                                <li>배웠던 것들을 저장하는 장소</li>
+                            </ul><br>
+                            Github 주소 : https://github.com/GYUYOEN
+                        </div>
+                    </div>
+                    <div class="velog-container">
+                        <div class="velog-icon-container">
+                            <img class="velog-icon" src="./img/velog.png">
+                        </div>
+                        <div class="text-container2">
+                            <h2>velog</h2><br>
+                            <ul>
+                                <li>코딩테스트 코드리뷰를 작성하는 장소</li>
+                                <li>진행한 프로젝트에서 배웠던 것을 기록하는 장소
+                                <li>코드오류들을 정리해두는 장소</li>
+                            </ul><br>
+                            Velog 주소 : https://velog.io/@rbdus96
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="velog-container">
-                <div class="velog-icon-container">
-                    <img class="velog-icon" src="./img/velog.png">
-                </div>
-                <div class="text-container">
-                    <h2>velog</h2><br>
-                    <ul>
-                        <li>코딩테스트 코드리뷰를 작성하는 장소</li>
-                        <li>진행한 프로젝트에서 배웠던 것을 기록하는 장소
-                        <li>코드오류들을 정리해두는 장소</li>
-                    </ul><br>
-                    Velog 주소 :
-                </div>
-            </div>
-        </section>
-        <section class="more-about-me">
-            <div class="title">
-                <h1>more about me</h1>
-            </div>
-        </section>
+            </section>
+        </div>
     </body>
 </html>
