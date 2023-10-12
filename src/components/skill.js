@@ -125,7 +125,7 @@ function Skill() {
       <div className="skill-text">
         <p><p className="skill-text-title">나의 주언어<img className="developer" src={Dev} alt="developer"></img></p> : JAVA</p>
         <p className="skill-text-title">사용해왔던 기술들<img className="developer" src={Dev} alt="developer"></img></p>
-        <p>- BackEnd : Spring, Jsp</p>
+        <p>- BackEnd : Spring, Jsp, Linux</p>
         <p>- DataBase(DB) : MariaDB, MySql, Oracle, MyBatis, Jpa</p>
         <p>- FrontEnd : Html, Css, JavaScript</p>
         <p><p className="skill-text-title">현재 관심있는 언어<img className="developer" src={Dev} alt="developer"></img></p> : C++, React</p>
