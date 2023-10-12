@@ -8,7 +8,7 @@
   text-align: center;
   color: rgb(179, 178, 178);
   position: absolute;
-  background-image: url("./myphoto.jpg");
+  background-image: url("./img/myphoto.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("./myphoto.jpg");
