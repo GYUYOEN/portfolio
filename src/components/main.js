@@ -1,5 +1,5 @@
 import './main.css';
-import Heart from './heart.png';
+import Heart from './img/heart.png';
 
 function Main() {
     return (
