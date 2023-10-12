@@ -7,15 +7,19 @@ import Skill from './components/skill';
 
 import './App.css';
 
+import {BrowserRouter} from 'react-router-dom';
+
 function App() {
   return (
     <div className='app'>
+      <BrowserRouter>
       <Navbar />
       <Main />
       <AboutMe />
       <Values />
       <Project />
       <Skill />
+      </BrowserRouter>
     </div>
   );
 }

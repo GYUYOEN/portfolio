@@ -1,13 +1,27 @@
 import './project.css';
-import WorkForUs from './workforus.gif';
+import WorkForUs from './img/workforus.gif';
+import {useEffect, useState} from 'react';
 
 function Project() {
+    const [position, setPosition] = useState(0);
+    function onScroll() {
+        setPosition(window.scrollY);
+    }
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll);
+        return () => {
+            window.removeEventListener("scroll", onScroll);
+        };
+    }, []);
+
     return (
-        <section className="project">
+        <section className="project" id="project">
             <div>
-                <p className="project-title">Project</p>
+                <p className="project-title">Projects</p>
             </div>
-            <div>
+            <div style={{
+                opacity : (position-2300) / 500
+            }}>
                 <img className="workforus" src={WorkForUs} alt="workforus" />
                 <div className="project-container">
                     <p className="project-subject">Work For Us</p>

@@ -5,20 +5,17 @@ function Navbar() {
         <header>
             <nav className="navbar">
                 <div className="brand">
-                    <a className="url" href="#!">about GyuYeon</a>
+                    <a className="url" href="#main">about GyuYeon</a>
                 </div>
                 <ul className="nav-link">
                     <li>
-                        <a className="url" href="#!">about me</a>
+                        <a className="url" href="#aboutme">about me</a>
                     </li>
                     <li>
-                        <a className="url" href="#!">project</a>
+                        <a className="url" href="#project">projects</a>
                     </li>
                     <li>
-                        <a className="url" href="#!">skills</a>
-                    </li>
-                    <li>
-                        <a className="url" href="#!">share</a>
+                        <a className="url" href="#skills">skills</a>
                     </li>
                 </ul>
                 <a className="navbar__toggleBtn" href="#!">

@@ -1,11 +1,10 @@
 import './aboutme.css';
-import Me from './me.jpg';
+import Me from './img/me.jpg';
 import {useEffect, useState} from 'react';
 
 function AboutMe() {
     const [position, setPosition] = useState(0);
     function onScroll() {
-        console.log(window.scrollY)
         setPosition(window.scrollY);
     }
     useEffect(() => {
@@ -16,14 +15,14 @@ function AboutMe() {
     }, []);
 
     return (
-        <section className='aboutme'>
+        <section className='aboutme' id='aboutme'>
             <div>
                 <p className='text-aboutme'>About Me</p>
                 <img className='me' src={Me} alt="me" style={
                     position>810 ? {top: '50%' ,left: '530px'} : {transform: `translate(${(position-500)}px)`}
                 }/>
                 <div className='me-introduce' style={
-                    position>810 ? {top: '52%' ,right: '530px'} : {transform: `translate(-${(position-400)}px)`}
+                    position>810 ? {top: '25%', left: '740px'} : {transform: `translate(-${(position-400)}px)`}
                 }>
                     <p className='aboutme-text'>이름 : 김규연</p>
                     <p className='aboutme-text'>생일 : 1996.10.21</p>

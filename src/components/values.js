@@ -1,11 +1,10 @@
 import './values.css';
-import Star from './star.png';
+import Star from './img/star.png';
 import {useEffect, useState} from 'react';
 
 function Values() {
     const [position, setPosition] = useState(0);
     function onScroll() {
-        console.log(window.scrollY)
         setPosition(window.scrollY);
     }
     useEffect(() => {
@@ -20,9 +19,9 @@ function Values() {
             <div>
                 <p className="text-title">도전을 좋아하는 개발자</p>
             </div>
-            <div className="values-container" style={{
-                opacity: (position-1500)/200,
-            }}>
+            <div className="values-container" style={
+                position>1800 ? {left: '5%', top: '30%'} : {transform: `translateY(-${(position-1500)}px)`}
+            }>
                 <div className="values-intro">
                     <p className="values-title">끊임없는 성장과 학습&nbsp;<img className="star" src={Star} alt="star" /></p>
                     <p className="values-explain"> 저는 항상 새로운 기술과 도구에 도전하며, 

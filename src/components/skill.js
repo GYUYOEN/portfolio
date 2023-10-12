@@ -3,15 +3,15 @@ import React from "react";
 import "./skill.css";
 import $ from "jquery";
 
-import Java from "./java.png";
-import Css from "./css.png";
-import Html from "./html.png";
-import Js from "./js.png";
-import Linux from "./linux.png";
-import Mysql from "./mysql.png";
-import Reac from "./react.png";
-import Cp from "./c++.png";
-import Dev from "./developer.png";
+import Java from "./img/java.png";
+import Css from "./img/css.png";
+import Html from "./img/html.png";
+import Js from "./img/js.png";
+import Linux from "./img/linux.png";
+import Mysql from "./img/mysql.png";
+import Reac from "./img/react.png";
+import Cp from "./img/c++.png";
+import Dev from "./img/developer.png";
 
 import {useEffect, useState} from 'react';
 
@@ -19,7 +19,6 @@ var flag = true;
 function Skill() {
   const [position, setPosition] = useState(0);
   function onScroll() {
-      console.log(window.scrollY)
       setPosition(window.scrollY);
   }
   useEffect(() => {
@@ -68,9 +67,9 @@ function Skill() {
   }
 
   return (
-    <section className="skill">
+    <section className="skill" id="skills">
       <div>
-        <p className="skill-title">Skill</p>
+        <p className="skill-title">Skills</p>
       </div>
       <div className="chart-container">
         <div className="pie-chart pie-chart1">
